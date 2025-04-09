@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using ArvPoly.Core;
+using ArvPoly.Core.Vehicles;
+using System.Text;
+
+Console.OutputEncoding = Encoding.UTF8;
+
+VehicleHandler vh = new();
+
+Vehicle vehicle = vh.Create<Truck>("Cool", "Volvo", 2010, 5000);
+
+
+if (VehicleHandler.TryGetAsTVehicle(vehicle, out Truck truck))
+{
+    Console.WriteLine(truck.AttachTrailer());
+    Console.WriteLine(truck.AttachTrailer());
+    Console.WriteLine(truck.AttachTrailer());
+    Console.WriteLine(truck.AttachTrailer());
+    Console.WriteLine(truck.RemoveTrailer());
+}
+
+Console.WriteLine(string.Join(", ", vehicle.Stats()));
+
+Console.WriteLine(vehicle.StartEngine());
