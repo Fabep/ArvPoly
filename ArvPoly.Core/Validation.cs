@@ -1,6 +1,6 @@
 ﻿namespace ArvPoly.Core;
 
-internal static class Validation
+public static class Validation
 {
     internal static (bool success, string? error) ValidateStringLength(string value, int lowerLimit, int upperLimit)
     {
@@ -18,6 +18,6 @@ internal static class Validation
         return (!(value < lowerLimit || value > upperLimit), "Size of the value is outside of the application limits.");
     }
 
-    internal static int GetCurrentYear() => DateTime.Now.Year;
+    public static int GetCurrentYear() => DateTime.Now.Year;
 
 }

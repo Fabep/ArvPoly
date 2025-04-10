@@ -21,7 +21,7 @@ public class Truck : Vehicle
 
     public override string[] Stats()
     {
-        return [.. base.Stats(), Trailers.ToString()];
+        return [.. base.Stats(), $"Trailers: {Trailers}"];
     }
 
     public string AttachTrailer()

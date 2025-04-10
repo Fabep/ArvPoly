@@ -58,7 +58,7 @@ public abstract class Vehicle
 
     public virtual string[] Stats()
     {
-        return [Model, Brand, Year.ToString(), Weight.ToString()];
+        return [$"Model: {Model}", $"Brand: {Brand}", $"Year: {Year}", $"Weight: {Weight}"];
     }
     
 }

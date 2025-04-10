@@ -6,7 +6,7 @@ public class VehicleHandler
 {
     private const string VEHICLE = "Vehicle";
     private List<Vehicle> Vehicles { get; set; } = [];
-    public Vehicle Create<T>(string model, string brand, int year, double weight)
+    public T Create<T>(string model, string brand, int year, double weight)
         where T : Vehicle
     {
         if (typeof(T).Name is VEHICLE)
@@ -41,7 +41,7 @@ public class VehicleHandler
     {
         vehicle.Weight = newWeight;
     }
-    public Vehicle[] GetAllCars()
+    public Vehicle[] GetAllVehicles()
     {
         return [.. Vehicles];
     }
