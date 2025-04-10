@@ -11,9 +11,10 @@ public abstract class Vehicle
     {
         get { return _brand; }
         set 
-        { 
-            if (!Validation.ValidateStringLength(value, 2, 20))
-                throw new ArgumentOutOfRangeException(nameof(Brand));
+        {
+            (bool success, string? error) = Validation.ValidateStringLength(value, 2, 20);
+            if (!success)
+                throw new ArgumentException($"{nameof(Brand)}: {error}");
             _brand = value; 
         }
     }
@@ -23,8 +24,9 @@ public abstract class Vehicle
         get { return _model; }
         set
         {
-            if (!Validation.ValidateStringLength(value, 2, 20))
-                throw new ArgumentOutOfRangeException(nameof(Model));
+            (bool success, string? error) = Validation.ValidateStringLength(value, 2, 20);
+            if (!success)
+                throw new ArgumentException($"{nameof(Model)}: {error}");
             _model = value;
         }
     }
@@ -34,8 +36,9 @@ public abstract class Vehicle
         get { return _year; }
         set
         {
-            if (!Validation.ValidateIntLimit(value, 1886, Validation.GetCurrentYear()))
-                throw new ArgumentOutOfRangeException(nameof(Year));
+            (bool success, string? error) = Validation.ValidateIntLimit(value, 1886, Validation.GetCurrentYear());
+            if (!success)
+                throw new ArgumentException($"{nameof(Year)}: {error}");
             _year = value;
         }
     }
@@ -43,7 +46,13 @@ public abstract class Vehicle
     internal double Weight
     {
         get { return _weight; }
-        set { _weight = value; }
+        set 
+        {
+            (bool success, string? error) = Validation.ValidateDoubleLimit(value, lowerLimit: 0);
+            if (!success)
+                throw new ArgumentException($"{nameof(Year)}: {error}");
+            _weight = value;
+        }
     }
     public abstract string StartEngine();
 

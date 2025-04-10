@@ -8,8 +8,9 @@ public class Truck : Vehicle
         get => _trailers;
         set
         {
-            if (!Validation.ValidateIntLimit(value, -1, 3))
-                throw new ArgumentOutOfRangeException(nameof(Trailers));
+            (bool success, string? error) = Validation.ValidateIntLimit(value, 0, 3);
+            if (!success)
+                throw new ArgumentException($"{nameof(Trailers)}: {error}");
             _trailers = value;
         }
     }

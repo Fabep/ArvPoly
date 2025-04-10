@@ -23,55 +23,23 @@ public class VehicleHandler
         return vehicle;
     }
 
-    public bool UpdateModel(Vehicle vehicle, string newModel)
+    public void UpdateModel(Vehicle vehicle, string newModel)
     {
-        try
-        {
-            vehicle.Model = newModel;
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
+        vehicle.Model = newModel;
     }
-    public bool UpdateBrand(Vehicle vehicle, string newBrand)
+    public void UpdateBrand(Vehicle vehicle, string newBrand)
     {
-        try
-        {
-            vehicle.Brand= newBrand;
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
+        vehicle.Brand= newBrand;
     }
 
-    public bool UpdateYear(Vehicle vehicle, int newYear)
+    public void UpdateYear(Vehicle vehicle, int newYear)
     {
-        try
-        {
-            vehicle.Year = newYear;
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
+        vehicle.Year = newYear;
     }
 
-    public bool UpdateWeight(Vehicle vehicle, double newWeight)
+    public void UpdateWeight(Vehicle vehicle, double newWeight)
     {
-        try
-        {
-            vehicle.Weight = newWeight;
-            return true;
-        }
-        catch
-        {
-            return false;
-        }
+        vehicle.Weight = newWeight;
     }
     public Vehicle[] GetAllCars()
     {

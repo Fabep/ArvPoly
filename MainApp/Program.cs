@@ -6,7 +6,7 @@ Console.OutputEncoding = Encoding.UTF8;
 
 VehicleHandler vh = new();
 
-Vehicle vehicle = vh.Create<Truck>("Cool", "Volvo", 2010, 5000);
+Vehicle vehicle = vh.Create<Truck>("", "Volvo", 2010, 5000);
 
 
 if (VehicleHandler.TryGetAsTVehicle(vehicle, out Truck truck))
