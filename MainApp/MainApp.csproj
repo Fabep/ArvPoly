@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\lex\lex.Helpers\lex.Helpers.csproj" />
+    <ProjectReference Include="..\ArvPoly.Core\ArvPoly.Core.csproj" />
+  </ItemGroup>
+
 </Project>

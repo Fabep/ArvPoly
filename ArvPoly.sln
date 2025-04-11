@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "MainApp\MainApp.csproj", "{899B287E-D85F-44A3-9C90-2C8F028A8CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArvPoly.Core", "ArvPoly.Core\ArvPoly.Core.csproj", "{B2431A49-D6FC-4CDC-A7A6-F2018F008590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lex.Helpers", "..\lex\lex.Helpers\lex.Helpers.csproj", "{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{899B287E-D85F-44A3-9C90-2C8F028A8CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{899B287E-D85F-44A3-9C90-2C8F028A8CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{899B287E-D85F-44A3-9C90-2C8F028A8CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
