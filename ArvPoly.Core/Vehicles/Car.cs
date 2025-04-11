@@ -31,7 +31,7 @@ public class Car : Vehicle, ICleanable
 
     public override string[] Stats()
     {
-        string carType = IsClownCar ? $"Clown car with {PassengerSeats}" : $"Passenger Seats: {PassengerSeats}";
+        string carType = IsClownCar ? $"Clown car with {PassengerSeats} passenger seats" : $"Passenger Seats: {PassengerSeats}";
         return [.. base.Stats(), carType];
     }
 }

@@ -9,7 +9,7 @@ public class Motorcycle : Vehicle, ICleanable
 
     public override string StartEngine()
     {
-        return "Revving up the engine...";
+        return "🏍️ Revving up the engine...";
     }
 
     public override string[] Stats()

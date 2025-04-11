@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainApp", "MainApp\MainApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArvPoly.Core", "ArvPoly.Core\ArvPoly.Core.csproj", "{B2431A49-D6FC-4CDC-A7A6-F2018F008590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lex.Helpers", "..\..\lex\lex.Helpers\lex.Helpers.csproj", "{983D25C8-51DF-6CC5-BBE8-D1FD61B42D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lex.Helpers", "..\lex\lex.Helpers\lex.Helpers.csproj", "{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2431A49-D6FC-4CDC-A7A6-F2018F008590}.Release|Any CPU.Build.0 = Release|Any CPU
-		{983D25C8-51DF-6CC5-BBE8-D1FD61B42D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{983D25C8-51DF-6CC5-BBE8-D1FD61B42D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{983D25C8-51DF-6CC5-BBE8-D1FD61B42D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{983D25C8-51DF-6CC5-BBE8-D1FD61B42D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A737FF4-1C73-76AB-F7D9-3F7B5A7FBE75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

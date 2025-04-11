@@ -15,7 +15,7 @@ public class Boat : Vehicle
     }
     public override string StartEngine()
     {
-        return $"Splash splosh! The boat is starting to accelerate to it's max speed of {MaxKnots}";
+        return $"🚤 Splash splosh! The boat is starting to accelerate to it's max speed of {MaxKnots} knots";
     }
 
     public override string[] Stats()

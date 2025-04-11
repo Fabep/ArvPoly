@@ -1,7 +1,12 @@
-﻿namespace ArvPoly.Core.Vehicles;
+﻿using ArvPoly.Core.SystemErrors;
+
+namespace ArvPoly.Core.Vehicles;
 
 public abstract class Vehicle
 {
+    public static SystemError[] PossibleErrors { get; } = 
+        [new BrakeFailureError(), new EngineFailureError(), new TransmissionError()];
+
     private string _brand = null!;
     private string _model = null!;
     private int _year;
